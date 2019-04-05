@@ -4,7 +4,7 @@
 #include <utility>
 using namespace std;
 
-
+// when a is true, the b in a && b will not be executed, similarly when a is false in a || b
 bool dfs(vector<vector<char>> &chars, int i, int j, queue<pair<int,int>> &q, vector<vector<bool>> &visited){
     if(i<0 || j<0 || i==chars.size() || j==chars[0].size())return false;
     if(chars[i][j]=='X' || visited[i][j])return true;
